@@ -1,0 +1,50 @@
+2024-10-10 16:46:04,706 - Alarm set for 12:00 AM (Recurring: No)
+2024-10-10 16:46:17,887 - Alarm set for 09:00 PM (Recurring: No)
+2024-10-10 16:46:42,390 - Alarm set for 09:00 PM (Recurring: No)
+2024-10-10 16:46:48,182 - Alarm set for 09:00 PM (Recurring: Mon, Thu)
+2024-10-10 16:52:23,983 - Alarm set for 12:00 AM (Recurring: Mon)
+2024-10-10 16:52:35,182 - Alarm set for 09:00 AM (Recurring: Wed, Fri)
+2024-10-10 16:53:14,539 - Alarm set for 09:00 AM (Recurring: Thu)
+2024-10-10 16:53:14,893 - Alarm ringing for Thu at 04:53 PM.
+2024-10-10 16:54:15,246 - Alarm finished.
+2024-10-10 16:56:39,327 - Alarm set for 11:02 AM (Recurring: No)
+2024-10-10 16:56:49,675 - Alarm set for 11:02 AM (Recurring: No)
+2024-10-10 16:57:08,194 - Alarm set for 11:02 AM (Recurring: No)
+2024-10-10 16:57:19,476 - Alarm set for 11:02 AM (Recurring: No)
+2024-10-10 16:57:31,640 - Alarm set for 11:02 AM (Recurring: No)
+2024-10-10 16:57:44,743 - Alarm set for 11:15 AM (Recurring: No)
+2024-10-10 16:57:57,608 - Alarm set for 11:15 AM (Recurring: Wed, Fri)
+2024-10-10 16:58:05,251 - Alarm set for 11:15 AM (Recurring: No)
+2024-10-10 16:58:10,547 - Alarm set for 11:02 AM (Recurring: No)
+2024-10-10 16:58:20,580 - Alarm set for 11:02 AM (Recurring: No)
+2024-10-10 16:58:22,477 - Alarm set for 11:02 AM (Recurring: No)
+2024-10-10 16:58:23,802 - Alarm set for 11:02 AM (Recurring: No)
+2024-10-10 17:09:12,120 - Alarm set for 12:00 AM (Recurring: No)
+2024-10-10 17:09:18,428 - Alarm set for 12:00 AM (Recurring: Wed)
+2024-10-10 17:09:24,094 - Alarm set for 12:00 AM (Recurring: Wed)
+2024-10-10 17:10:49,886 - Alarm set for 12:00 AM (Recurring: No)
+2024-10-10 17:11:05,946 - Alarm set for 08:04 AM (Recurring: Mon)
+2024-10-10 17:11:17,465 - Alarm set for 08:04 AM (Recurring: Mon)
+2024-10-10 17:11:20,223 - Alarm deleted: 08:04 AM
+2024-10-10 17:11:20,998 - Alarm deleted: 08:04 AM
+2024-10-10 17:11:21,610 - Alarm deleted: 12:00 AM
+2024-10-10 17:44:30,791 - Alarm set for 12:00 AM (Recurring: No)
+2024-10-10 18:29:48,975 - Alarm deleted: 12:00 AM
+2024-10-10 18:30:23,842 - Alarm set for 03:00 PM (Recurring: Mon)
+2024-10-10 18:31:03,799 - Alarm set for 10:00 AM (Recurring: Thu)
+2024-10-10 18:31:04,511 - Alarm ringing for Thu at 06:31 PM.
+2024-10-10 18:32:04,878 - Alarm finished.
+2024-10-10 18:32:07,710 - Alarm ringing for Thu at 06:32 PM.
+2024-10-10 18:32:39,022 - Alarm ringing for Thu at 06:32 PM.
+2024-10-10 18:33:39,364 - Alarm finished.
+2024-10-10 18:33:48,247 - Alarm ringing for Thu at 06:33 PM.
+2024-10-10 18:35:47,224 - Alarm set for 03:00 PM (Recurring: Mon)
+2024-10-10 18:36:36,577 - Alarm set for 10:00 AM (Recurring: Mon, Thu)
+2024-10-10 18:36:37,368 - Alarm ringing for Thu at 06:36 PM.
+2024-10-10 18:36:47,434 - Alarm finished.
+2024-10-10 18:36:50,188 - Alarm ringing for Thu at 06:36 PM.
+2024-10-10 18:37:00,255 - Alarm finished.
+2024-10-10 18:37:06,698 - Alarm ringing for Thu at 06:37 PM.
+2024-10-10 18:37:16,762 - Alarm finished.
+2024-10-10 18:37:19,857 - Alarm ringing for Thu at 06:37 PM.
+2024-10-10 18:37:29,924 - Alarm finished.
