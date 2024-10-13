@@ -1,0 +1,4 @@
+darkdetect==0.8.0
+pillow==10.4.0
+pystray==0.19.5
+six==1.16.0
