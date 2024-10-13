@@ -40,8 +40,6 @@ class AlarmClock:
         self.label_var = tk.StringVar(value="")
         self.ampm_var_color_fix = None
 
-        self.editing_alarm = None  # To keep track of the alarm being edited
-
         ttk.Label(root, text="Set Alarm Time:", font=("Helvetica", 14)).pack(pady=10)
 
         time_frame = ttk.Frame(root)
@@ -130,7 +128,7 @@ class AlarmClock:
 
         # Set recurring days
         recurring_days = [day for day, var in self.days_vars.items() if var.get()]
-        is_recurring = self.recurring_var.get() and bool(recurring_days)
+        is_recurring = self.recurring_var.get() and recurring_days
 
         # If the set time is earlier than now and not recurring, set it for the next day
         if alarm_time <= now and not is_recurring:
@@ -145,14 +143,8 @@ class AlarmClock:
             "label": self.label_var.get(),
             "enabled": True
         }
-
-        # If editing an existing alarm, replace it
-        if self.editing_alarm:
-            self.alarms.remove(self.editing_alarm)
-            self.editing_alarm = None
-
         self.alarms.append(alarm_details)
-        self.update_alarms_display()
+        self.add_alarm_card(alarm_details)
         self.label_var.set("")
         logging.info(f"Alarm set for {alarm_time.strftime('%I:%M %p')} (Recurring: {', '.join(recurring_days) if is_recurring else 'No'})")
         self.save_alarms()
@@ -186,13 +178,13 @@ class AlarmClock:
         self.minute_var.set(alarm["time"].strftime("%M"))
         self.ampm_var.set(alarm["time"].strftime("%p"))
         self.duration_var.set(alarm["duration"])
-        self.recurring_var.set(bool(alarm["is_recurring"]))
+        self.recurring_var.set(alarm["is_recurring"])
         self.label_var.set(alarm["label"])
         for day in self.days_vars:
             self.days_vars[day].set(day in alarm["recurring_days"])
 
-        # Mark the alarm for updating
-        self.editing_alarm = alarm
+        # Remove the alarm to be updated later
+        self.alarms.remove(alarm)
         self.update_alarms_display()
         self.save_alarms()
 
@@ -208,11 +200,10 @@ class AlarmClock:
             if alarm["enabled"] and now >= alarm["time"]:
                 if alarm["is_recurring"]:
                     current_day = now.strftime("%a")
-                    if current_day in alarm["recurring_days"] and now.time().replace(second=0, microsecond=0) == alarm["time"].time():
+                    if current_day in alarm["recurring_days"]:
                         logging.info(f"Alarm ringing for {current_day} at {now.strftime('%I:%M %p')}.")
                         self.ring_alarm(alarm)
-                        alarm["time"] += timedelta(weeks=1)  # Reschedule recurring weekly alarm
-                elif now >= alarm["time"]:
+                else:
                     logging.info(f"Alarm ringing at {now.strftime('%I:%M %p')}.")
                     self.ring_alarm(alarm)
 
